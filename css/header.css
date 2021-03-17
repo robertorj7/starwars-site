@@ -1,0 +1,102 @@
+header {
+  background-image: url('../assets/images/bg-masthead.jpg');
+  background-size: cover;
+  background-position: center center;  
+  height: 100vh;
+  width: 100%;
+}
+
+header > nav {  
+  display: flex;  
+  flex-direction: column;
+  align-items: center;  
+  padding-top: 1rem;
+  color: white;  
+}
+
+header > nav > span {  
+  font-family: 'Star Jedi', sans-serif;    
+  font-size: 1.5rem;
+}
+
+header > nav > .nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;  
+  font-size: 1.25rem;
+}
+
+
+header > .header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > .header-text > .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  font-family: 'Star Jedi', sans-serif;
+  color: #eeff00;  
+  font-size: 7rem;
+  margin-top: 3rem;
+}
+
+header > .header-text > .title > span:nth-child(2) {
+  position: absolute;
+  top: 5.5rem;
+  font-size: 7rem;
+}
+
+header > .header-text > span {  
+  text-align: center;
+  color: white; 
+  max-width: 30rem;
+  margin-top: 5rem;  
+  font-size: 1.25rem;   
+}
+
+header > .header-text > button {
+  background-color: yellow;
+  height: 3rem;
+  font-weight: 3rem;
+  border-radius: 0.5rem;
+  border-style: none;
+  padding: 1.5rem;  
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  width: 10rem;
+}
+
+
+/* Small Devices */
+@media (max-width: 425px) {
+  header > .header-text > .title {
+    font-size: 5rem;
+  }
+
+  header > .header-text > .title > span:nth-child(2) {
+    font-size: 5rem;
+    top: 4rem;
+  }
+}
+
+/* Large Devices - Desktop */
+@media (min-width: 992px) {
+  header > nav {    
+    flex-direction: row;    
+    justify-content: space-between;
+  }
+
+  header > nav > span {          
+    margin-left: 10rem;
+  }
+  
+  header > nav > .nav-links {    
+    margin-right: 10rem;    
+  }
+}

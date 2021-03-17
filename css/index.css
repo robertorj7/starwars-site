@@ -1,0 +1,21 @@
+@import './global.css';
+@import './header.css';
+@import './about.css';
+@import './sceneries.css';
+@import './subscribe.css';
+@import './contact.css';
+@import './footer.css';
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+
+@font-face {
+  font-family: 'Star Jedi';
+  src: url('../assets/fonts/StarJedi.eot');
+  src: url('../assets/fonts/StarJedi.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/StarJedi.woff2') format('woff2'),
+      url('../assets/fonts/StarJedi.woff') format('woff'),
+      url('../assets/fonts/StarJedi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,27 @@
+.sceneries {
+  background-color: black ;
+}
+
+.sceneries > .scenery {
+  position: relative;
+}
+
+.sceneries > .scenery > h2 {
+  font-family: 'Star Jedi', sans-serif;
+  color: white;
+  position: absolute;
+  text-align: center;  
+}
+
+.sceneries > .scenery > p {
+  color: white;
+  position: absolute;
+  margin-top: 12rem;
+  text-align: center; 
+  font-size: 0.75rem; 
+}
+
+.sceneries > .scenery > .scenery-img {
+  width: 100%;
+  height: 15rem;
+}

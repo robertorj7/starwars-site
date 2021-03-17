@@ -1,0 +1,32 @@
+.footer-container {
+  background-color: black;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-container > .icons-container {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  background-color: black;
+}
+
+.footer-container > .icons-container > .footer-icon{  
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  background-color: gray;
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.footer-container > .copyright {
+  color: gray;
+  margin-top: 1rem;  
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
