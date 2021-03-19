@@ -1,5 +1,7 @@
-.subscribe {
-  background-image: url('../assets/images/bg-signup.jpg');
+.subscribe {  
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('../assets/images/bg-signup.jpg');
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -41,7 +43,7 @@
 .subscribe > .subscribe-form > .subscribe-btn {
   border-radius: 0.5rem;
   padding: 1rem;
-  background-color: yellow;
+  background-color: #f5de13;
   width: 10rem;
   height: 4rem;
   cursor: pointer;

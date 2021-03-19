@@ -30,6 +30,10 @@
   padding: 0 3rem;
 }
 
+.sceneries > .scenery > .scenery-text > p {
+  color: #a0a0a0;
+}
+
 .sceneries > .scenery.shoreline {
   margin-bottom: 3rem;
 }
@@ -46,7 +50,7 @@
 .sceneries > .scenery.misty > .scenery-text,
 .sceneries > .scenery.montains > .scenery-text {
   background-color: black;
-  color: white;
+  color: white;  
 }
 
 @media (max-width: 641px) {
@@ -88,7 +92,7 @@
   }
 }
 
-@media (min-width: 992px) {  
+@media (min-width: 992px) and (max-width: 1200px){  
   .sceneries {
     padding: 1rem;
   }
