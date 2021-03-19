@@ -26,7 +26,6 @@
     max-width: 100%;
 }
 
-/* Mediun Devices - Tablet*/
 @media (min-width: 768px) {
   .about > h2 {    
     padding-bottom: 1rem;
@@ -38,5 +37,5 @@
 
   .about > img {
     width: 75%;
-}
+  }
 }

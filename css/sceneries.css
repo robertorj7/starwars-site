@@ -1,27 +1,95 @@
 .sceneries {
-  background-color: black ;
+  padding: 10rem 6rem;
+  background-color: white;
 }
 
-.sceneries > .scenery {
-  position: relative;
-}
-
-.sceneries > .scenery > h2 {
-  font-family: 'Star Jedi', sans-serif;
-  color: white;
-  position: absolute;
-  text-align: center;  
-}
-
-.sceneries > .scenery > p {
-  color: white;
-  position: absolute;
-  margin-top: 12rem;
-  text-align: center; 
-  font-size: 0.75rem; 
+.sceneries > .scenery > .scenery-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .sceneries > .scenery > .scenery-img {
-  width: 100%;
-  height: 15rem;
+  width: 45rem;  
+}
+
+.sceneries > .scenery > .scenery-text,
+.sceneries > .scenery > .scenery-img {
+  height: 30rem;
+}
+
+
+.sceneries > .scenery > .scenery-text > h2 {  
+  font-family: 'Star Jedi', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.sceneries > .scenery > .scenery-text > h2,
+.sceneries > .scenery > .scenery-text > p {
+  padding: 0 3rem;
+}
+
+.sceneries > .scenery.shoreline {
+  margin-bottom: 3rem;
+}
+
+.sceneries > .scenery.shoreline > .scenery-img,
+.sceneries > .scenery.misty > .scenery-img {
+  float: left;
+}
+
+.sceneries > .scenery.montains > .scenery-img {
+  float: right;
+}
+
+.sceneries > .scenery.misty > .scenery-text,
+.sceneries > .scenery.montains > .scenery-text {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 641px) {
+  .sceneries {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 992px) {  
+  .sceneries {
+    padding: 3rem;
+  } 
+}
+
+@media (max-width: 992px) {  
+  .sceneries > .scenery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .sceneries > .scenery.shoreline {
+    background-color: white;
+  }
+  
+  .sceneries > .scenery > .scenery-img {
+    width: 100%;
+    height: 21rem;
+  }
+  
+  .sceneries > .scenery > .scenery-text {
+    align-items: center;
+  }
+
+  .sceneries > .scenery > .scenery-text > p {
+    padding-top: 1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {  
+  .sceneries {
+    padding: 1rem;
+  }
 }

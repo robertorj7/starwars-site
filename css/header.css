@@ -24,6 +24,7 @@ header > nav > .nav-links {
   justify-content: space-between;
   gap: 2rem;  
   font-size: 1.25rem;
+  cursor: pointer;
 }
 
 
@@ -70,10 +71,9 @@ header > .header-text > button {
   align-items: center;
   justify-content: center;  
   width: 10rem;
+  cursor: pointer;
 }
 
-
-/* Small Devices */
 @media (max-width: 425px) {
   header > .header-text > .title {
     font-size: 5rem;
@@ -85,7 +85,6 @@ header > .header-text > button {
   }
 }
 
-/* Large Devices - Desktop */
 @media (min-width: 992px) {
   header > nav {    
     flex-direction: row;    
