@@ -49,6 +49,7 @@ header > .header-text > .title {
 header > .header-text > .title > span {
   background: -webkit-linear-gradient(#f5de13, #a78801d2);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
