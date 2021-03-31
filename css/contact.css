@@ -12,14 +12,30 @@
   height: 9.5rem;  
   text-align: center;
   padding: 0 1rem;
+  border-bottom: 0.25rem solid #f5de13;
 }
 
 .contact > .card > p {
   color: #a0a0a0;
+  padding-top: 1rem;
 }
 
 .contact > .card > .contact-icon {
   color: #f5de13;
+  font-size: 1.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.contact > .card > span::after {
+  content: '';
+  background-color: #f5de13;
+  height: 0.25rem;
+  width: 3.5rem;
+  
+  display: block;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 641px) {
@@ -38,11 +54,18 @@
     background-color: white;  
     width: 100%;
     height: 15rem;  
-    border-radius: 0.5rem;
-    gap: 1rem;
+    border-radius: 0.5rem;    
   }
   
   .contact > .card > .contact-icon {
     color: #ffd000;
-  } 
+  }
+
+  .contact > .card > p {
+    padding-top: 2rem;
+  }
+
+  .contact > .card > span::after {
+    margin-top: 1.5rem;    
+  }
 }

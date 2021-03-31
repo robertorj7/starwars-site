@@ -5,8 +5,7 @@
 
 .sceneries > .scenery > .scenery-text {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: column;  
   justify-content: center;
 }
 
@@ -25,17 +24,13 @@
   margin-bottom: 1rem;
 }
 
-.sceneries > .scenery > .scenery-text > h2,
-.sceneries > .scenery > .scenery-text > p {
-  padding: 0 3rem;
-}
-
 .sceneries > .scenery > .scenery-text > p {
   color: #a0a0a0;
 }
 
-.sceneries > .scenery.shoreline {
-  margin-bottom: 3rem;
+.sceneries > .scenery > .scenery-text > h2,
+.sceneries > .scenery > .scenery-text > p {
+  padding: 0 3rem;
 }
 
 .sceneries > .scenery.shoreline > .scenery-img,
@@ -43,14 +38,22 @@
   float: left;
 }
 
-.sceneries > .scenery.montains > .scenery-img {
+.sceneries > .scenery.mountains > .scenery-img {
   float: right;
 }
 
 .sceneries > .scenery.misty > .scenery-text,
-.sceneries > .scenery.montains > .scenery-text {
+.sceneries > .scenery.mountains > .scenery-text {
   background-color: black;
   color: white;  
+}
+
+.sceneries > .scenery.misty > .scenery-text::after,
+.sceneries > .scenery.mountains > .scenery-text::after {
+  content: "";  
+  border-bottom: 0.25rem solid #f5de13;
+  width: 8rem;    
+  margin-top: 1rem;       
 }
 
 @media (max-width: 641px) {
@@ -90,10 +93,47 @@
     padding-top: 1rem;
     text-align: center;
   }
+
+  .sceneries > .scenery.shoreline > .scenery-text::after {  
+    content: "";  
+    border-bottom: 0.25rem solid #f5de13;
+    width: 8rem;    
+    margin-top: 1rem;       
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px){  
   .sceneries {
     padding: 1rem;
+  }
+}
+
+@media (min-width: 992px) {  
+
+  .sceneries > .scenery.misty > .scenery-text {
+    align-items: flex-start;
+  }
+  
+  .sceneries > .scenery.mountains > .scenery-text {
+    align-items: flex-end;
+  }
+
+  .sceneries > .scenery.mountains > .scenery-text > p {
+    text-align: right;
+  }
+
+  .sceneries > .scenery.shoreline > .scenery-text::before {
+    content: "";  
+    border-left: 0.5rem solid #f5de13;
+    height: 10rem;
+    position: absolute;  
+  }
+
+  .sceneries > .scenery.misty > .scenery-text::after {
+    margin-left: 3rem;  
+  }
+  
+  .sceneries > .scenery.mountains > .scenery-text::after {  
+    margin-right: 3rem;  
   }
 }
