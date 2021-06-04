@@ -9,5 +9,5 @@
 #### Passos:
 
 1. Clonar a pasta do repositório;
-2. Abrir arquivo *index.html* no navegador. 
+2. Abrir arquivo `index.html` no navegador. 
 
